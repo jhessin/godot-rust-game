@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/coin.ogg-5b6dd8b09fda8f8bea7f302123717d70.oggstr"
+
+[deps]
+
+source_file="res://assets/Audio/coin.ogg"
+dest_files=[ "res://.import/coin.ogg-5b6dd8b09fda8f8bea7f302123717d70.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
