@@ -1,1 +1,0 @@
-/home/jhessin/Documents/github/godot-rust-game/target/debug/libgodot_rust_game.so: /home/jhessin/Documents/github/godot-rust-game/rust/build.rs /home/jhessin/Documents/github/godot-rust-game/rust/src/gd_main.rs /home/jhessin/Documents/github/godot-rust-game/rust/src/gd_player.rs /home/jhessin/Documents/github/godot-rust-game/rust/src/lib.rs

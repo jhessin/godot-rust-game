@@ -23,6 +23,7 @@ Cargo.lock
 \#*\#
 auto-save-list
 dist/
+lib
 flycheck_*.el
 godot/*.translation
 godot/.import/
