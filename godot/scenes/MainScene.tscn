@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://native/Main.gdns" type="Script" id=1]
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/Player.gdns" type="Script" id=3]
+[ext_resource path="res://scenes/Tile.tscn" type="PackedScene" id=4]
 
 [node name="MainScene" type="Node2D"]
 script = ExtResource( 1 )
@@ -10,3 +11,111 @@ script = ExtResource( 1 )
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 507.175, 271.867 )
 script = ExtResource( 3 )
+
+[node name="Floor" type="Node2D" parent="."]
+
+[node name="Tile" parent="Floor" instance=ExtResource( 4 )]
+position = Vector2( 96, 608 )
+
+[node name="Tile3" parent="Floor" instance=ExtResource( 4 )]
+position = Vector2( 160, 608 )
+
+[node name="Tile4" parent="Floor" instance=ExtResource( 4 )]
+position = Vector2( 224, 608 )
+
+[node name="Tile2" parent="Floor" instance=ExtResource( 4 )]
+position = Vector2( 32, 608 )
+
+[node name="Tile5" parent="Floor" instance=ExtResource( 4 )]
+position = Vector2( 352, 608 )
+
+[node name="Tile6" parent="Floor" instance=ExtResource( 4 )]
+position = Vector2( 416, 608 )
+
+[node name="Tile7" parent="Floor" instance=ExtResource( 4 )]
+position = Vector2( 480, 608 )
+
+[node name="Tile8" parent="Floor" instance=ExtResource( 4 )]
+position = Vector2( 288, 608 )
+
+[node name="Tile9" parent="Floor" instance=ExtResource( 4 )]
+position = Vector2( 608, 608 )
+
+[node name="Tile10" parent="Floor" instance=ExtResource( 4 )]
+position = Vector2( 672, 608 )
+
+[node name="Tile11" parent="Floor" instance=ExtResource( 4 )]
+position = Vector2( 736, 608 )
+
+[node name="Tile12" parent="Floor" instance=ExtResource( 4 )]
+position = Vector2( 544, 608 )
+
+[node name="Tile13" parent="Floor" instance=ExtResource( 4 )]
+position = Vector2( 864, 608 )
+
+[node name="Tile14" parent="Floor" instance=ExtResource( 4 )]
+position = Vector2( 928, 608 )
+
+[node name="Tile15" parent="Floor" instance=ExtResource( 4 )]
+position = Vector2( 992, 608 )
+
+[node name="Tile16" parent="Floor" instance=ExtResource( 4 )]
+position = Vector2( 800, 608 )
+
+[node name="LeftWall" type="Node2D" parent="."]
+
+[node name="Tile17" parent="LeftWall" instance=ExtResource( 4 )]
+position = Vector2( -32, 544 )
+
+[node name="Tile18" parent="LeftWall" instance=ExtResource( 4 )]
+position = Vector2( -32, 480 )
+
+[node name="Tile19" parent="LeftWall" instance=ExtResource( 4 )]
+position = Vector2( -32, 416 )
+
+[node name="Tile20" parent="LeftWall" instance=ExtResource( 4 )]
+position = Vector2( -32, 352 )
+
+[node name="Tile21" parent="LeftWall" instance=ExtResource( 4 )]
+position = Vector2( -32, 288 )
+
+[node name="Tile22" parent="LeftWall" instance=ExtResource( 4 )]
+position = Vector2( -32, 224 )
+
+[node name="Tile23" parent="LeftWall" instance=ExtResource( 4 )]
+position = Vector2( -32, 160 )
+
+[node name="Tile24" parent="LeftWall" instance=ExtResource( 4 )]
+position = Vector2( -32, 96 )
+
+[node name="Tile25" parent="LeftWall" instance=ExtResource( 4 )]
+position = Vector2( -32, 32 )
+
+[node name="RightWall" type="Node2D" parent="."]
+
+[node name="Tile26" parent="RightWall" instance=ExtResource( 4 )]
+position = Vector2( 1056, 544 )
+
+[node name="Tile27" parent="RightWall" instance=ExtResource( 4 )]
+position = Vector2( 1056, 480 )
+
+[node name="Tile28" parent="RightWall" instance=ExtResource( 4 )]
+position = Vector2( 1056, 416 )
+
+[node name="Tile29" parent="RightWall" instance=ExtResource( 4 )]
+position = Vector2( 1056, 352 )
+
+[node name="Tile30" parent="RightWall" instance=ExtResource( 4 )]
+position = Vector2( 1056, 288 )
+
+[node name="Tile31" parent="RightWall" instance=ExtResource( 4 )]
+position = Vector2( 1056, 224 )
+
+[node name="Tile32" parent="RightWall" instance=ExtResource( 4 )]
+position = Vector2( 1056, 160 )
+
+[node name="Tile33" parent="RightWall" instance=ExtResource( 4 )]
+position = Vector2( 1056, 96 )
+
+[node name="Tile34" parent="RightWall" instance=ExtResource( 4 )]
+position = Vector2( 1056, 32 )
