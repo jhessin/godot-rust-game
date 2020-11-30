@@ -137,9 +137,9 @@ edit:
 	godot --path godot/ -e &
 
 run:
-	# make build-x86_64-unknown-linux-gnu-debug
-	cargo build
-	mv ./target/debug/*.dylib ./lib
+	make build-x86_64-unknown-linux-gnu-debug
+	# cargo build
+	# mv ./target/debug/*.* ./lib
 	godot --path godot/ -d
 
 watch:

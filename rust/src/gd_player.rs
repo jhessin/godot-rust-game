@@ -11,7 +11,7 @@ pub struct Player {
   jump_force: u32,
   gravity: i32,
   vel: Vector2,
-  sprite: Option<Ref<Sprite>>,
+  sprite: Option<Ref<Sprite, Unique>>,
 }
 
 // __One__ `impl` block can have the `#[methods]` attribute, which will generate
@@ -33,6 +33,7 @@ impl Player {
       gravity: 800,
       vel: Vector2::new(0.0, 0.0),
       sprite: None,
+      // sprite: _owner.get_node("./Sprite").unwrap().try_to_object(),
     }
   }
 
@@ -42,6 +43,9 @@ impl Player {
   // The owner is passed to every single exposed method.
   #[export]
   unsafe fn _ready(&mut self, _owner: &KinematicBody2D) {
+    if let Some(node) = _owner.get_node("Sprite") {
+      self.sprite = node.assume_unique().cast::<Sprite>();
+    }
     // The `godot_print!` macro works like `println!` but prints to the Godot-editor
     // output tab as well.
     godot_print!("Player is ready!");
